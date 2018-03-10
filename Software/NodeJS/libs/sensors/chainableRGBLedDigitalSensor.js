@@ -3,7 +3,7 @@ var commands     = require('../commands')
 
 function ChainableRGBLedDigitalSensor(pin, numLeds) {
   DigitalSensor.apply(this, Array.prototype.slice.call(arguments))
-  this.numLeds
+  this.numLeds = numLeds
 }
 ChainableRGBLedDigitalSensor.prototype = new DigitalSensor()
 
