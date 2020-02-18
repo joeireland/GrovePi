@@ -28,6 +28,7 @@ function DigitalButton(pin, longPressDelay) {
             return
         } else { //res == 0 so user has lifted her finger
             currentDateTime = new Date()
+            pressedDateTime = pressedDateTime ? pressedDateTime : currentDateTime
             milliseconds = currentDateTime.getTime() - pressedDateTime.getTime()
             //if less than longPressDelay milliseconds
             if (milliseconds <= this.longPressDelay) {
