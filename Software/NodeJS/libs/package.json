@@ -1,5 +1,5 @@
 {
-    "name": "node-grove-pi",
+    "name": "grovepi",
     "version": "2.2.3",
     "description": "GrovePi library for Node.js",
     "keywords": ["grovepi", "robot", "gpio", "i2c"],
